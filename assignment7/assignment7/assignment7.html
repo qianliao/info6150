@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Shopping Cart</title>
+    <script src = "http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+    <script src = "controller.js"></script>
+
+    <style>
+        table, th , td {
+            border: 1px solid grey;
+            border-collapse: collapse;
+            padding: 2px;
+            /*width: 80%;*/
+            /*margin-right: auto;*/
+            /*margin-left: auto;*/
+        }
+
+        table tr:nth-child(odd) {
+            background-color: #f2f2f2;
+        }
+
+        table tr:nth-child(even) {
+            background-color: #ffffff;
+        }
+        /*p{*/
+            /*text-align: center;*/
+        /*}*/
+
+
+
+    </style>
+<body ng-app="angularApp" ng-controller="appController">
+<div>
+<h2>Product List</h2>
+
+
+    <table border="0">
+        <tr>
+            <th>Product</th>
+            <th>price</th>
+            <th>Quantity</th>
+        </tr>
+        <tr ng-repeat="x in suppliers">
+            <td>{{x.product}}</td>
+            <td>{{x.price| currency}}</td>
+            <td>Input Quantity:  <input type="text" name="x.quantity" ng-model="x.quantity" ng-keyup="clearNoNum(x,'quantity')"><button ng-click="add(x)" ng-disabled="x.quantity==0">Add to Cart</button></td>
+        </tr>
+    </table>
+</div>
+<div>
+    <h2>My Cart</h2>
+    <table border="0">
+        <tr>
+            <th>Product</th>
+            <th>price</th>
+            <th>Quantity</th>
+        </tr>
+        <tr ng-repeat="cart in carts">
+            <td>{{cart.product}}</td>
+            <td>{{cart.price| currency}}</td>
+            <td>{{cart.quantity}}</td>
+        </tr>
+        <tr >
+            <td colspan="3"> Total(Include tax):$<span ng-bind="caculate()"></span></td>
+        </tr>
+        <tr>
+            <td colspan="2"> DiscountCode<input type="text" ng-model="code" ng-bind="discount(code)"></td>
+            <td>After discount:{{sum_discount|currency}}</td>
+        </tr>
+    </table>
+</div>
+<div>
+    <h2>address</h2>
+<Form name = "addressForm">
+
+    Enter your Mail Address:<br>
+    <textarea name = "mailaddress"  rows="5" cols="30" ng-model="mailaddress" ng-pattern="/[A-Za-z0-9]+/" placeholder="apt,street,city,state,zipcode" required/></textarea>
+
+
+
+                        <span  style="color:red" ng-show="addressForm.mailaddress.$error.required">Mail Address is required.</span>
+                        <span style="color:red" ng-show="addressForm.mailaddress.$error.pattern">Please input valid address.</span>
+
+
+    <br>
+
+Enter your Shipping Address:<br>
+    <textarea name = "shipaddress" rows="5" cols="30" ng-model = "shipaddress" ng-pattern="/[A-Za-z0-9]+/" placeholder="apt,street,city,state,zipcode" required/></textarea>
+
+                        <span style = "color:red" ng-show="addressForm.shipaddress.$error.required">Shipping Address is required.</span>
+                        <span style = "color:red" ng-show="addressForm.shipaddress.$error.pattern">please input valid address.</span>
+
+<br>
+
+    <button ng-disabled = "addressForm.mailaddress.$invalid || addressForm.shipaddress.$invalid  " ng-click="submit()">Submit</button>
+</form>
+
+</div>
+
+
+</body>
+</html>

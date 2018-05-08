@@ -1,0 +1,472 @@
+nav{
+  background-color: black;
+}
+
+.navbar-nav a{
+  font-weight: bold;
+}
+
+.navbar-brand{
+  padding-right: 150px;
+}
+
+.marquee{
+  padding: 20px;
+  font-size: 20px;
+  margin-top: 70px;
+  font-family: 'Comfortaa', cursive;
+  color: #DD0426;
+  font-weight: bold;
+}
+
+#featured .carousel-item img{
+  width: 100%;
+  height: 100%;
+}
+
+.card
+{
+  height: 180px;
+  width: 318px;
+}
+
+#products{
+  font-family: 'Comfortaa', cursive;
+  background-color: #020100;
+  height: 720px;
+  padding-top: 40px;
+  color: #fff;
+}
+
+h4{
+  text-align: center;
+}
+
+.heading{
+  margin-bottom: 40px;
+}
+
+#shop{
+  font-family: 'Comfortaa', cursive;
+}
+
+footer{
+font-family: 'Comfortaa', cursive;
+background-color: #020100;
+height: 260px;
+padding-top: 100px;
+color: #fff;
+font-weight: 200;
+text-align: center;
+}
+
+ul li{
+text-decoration: none;
+display: inline-block;
+padding: 10px;
+}
+
+textarea{
+height: 160px;
+}
+
+
+#team{
+  font-family: 'Comfortaa', cursive;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  text-align: center;
+}
+
+#contactus{
+  font-family: 'Comfortaa', cursive;
+  color: #fff;
+  background-color: #020100;
+  padding-top: 40px;
+  padding-bottom: 60px;
+}
+
+.card-body{
+  padding: 10px;
+}
+
+/*返回*/
+#back{  font-family: 'Comfortaa', cursive;
+  padding-top: 80px;
+  color: #020100;
+  margin-bottom: 20px;
+  float: right;
+  clear: both;
+}
+/*sport的div*/
+#sportproducts{
+  font-family: 'Comfortaa', cursive;
+  color: #020100;
+}
+.sortlist{
+    margin-top: 30px;
+}
+.best_sell{
+  margin-top: 20px;
+  position: fixed;
+}
+.best_sell1{
+  border: 1px solid rgba(24, 27, 42, 0.13);
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+.best_sell2{
+  border: 1px solid rgba(24, 27, 42, 0.13);
+  border-radius: 5px;
+
+}
+.arrow{float:right;}
+.product-left{
+   position:relative;
+   text-align:center;
+
+ }
+.p-one {
+  border: 1px solid rgba(24, 27, 42, 0.13);
+  padding: 40px 15px;
+  margin: 20px 0;
+  height: 400px;
+}
+.product-left:hover .p-one{
+  border: 1px solid #8c2830;
+  transition: 0.5s all ease;
+  -webkit-transition: 0.5s all ease;
+  -moz-transition: 0.5s all ease;
+  -o-transition: 0.5s all ease;
+  -ms-transition: 0.5s all ease;
+}
+.product-left:hover .p-one img{
+  -webkit-transform: scale(0.9);
+  /* Webkit: Scale up image to 1.2x original size; */
+  -moz-transform: scale(0.9);
+  -o-transform: scale(0.9);
+  opacity: 1;
+}
+.p-one img {
+  -webkit-transition-duration: 0.5s;
+  /* Webkit: Animation duration; */
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  width:100%;
+}
+.product-left:hover .p-one p a{
+  color: #8c2830;
+}
+.product-left:hover .mask{
+  display:block;
+}
+.mask {
+  display: none;
+  position: absolute;
+  top: 44%;
+  left: 33%;
+}
+.mask span{
+  background:#8c2830;
+  color:#fff;
+  font-size:15px;
+  font-weight:400;
+  padding:6px 12px;
+}
+.mask span:hover{
+   text-decoration:none;
+   background:#181b2a;
+   transition: 0.7s all;
+   -webkit-transition: 0.7s all;
+   -o-transition: 0.7s all;
+   -moz-transition: 0.7s all;
+   -ms-transition: 0.7s all;
+ }
+
+.item_price::before{content:"$";}
+
+.product-one {
+  margin-top: 4%;
+}
+.product-one:nth-child(1){
+  margin-top:0;
+}
+.p-one h4{
+  color: #242424;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 5px 0 0 0;
+}
+.p-one p {
+  font-size: 1.7em;
+  color: #999;
+  font-family: 'Lato', sans-serif;
+  margin: 5px 0 0 0;
+  font-weight: 700;
+  display: inline-block;
+  vertical-align: middle;
+}
+.p-one p a {
+  text-decoration: none;
+  color: #999;
+}
+.p-one p i {
+  background: url(../images/sports/cart.png) no-repeat;
+  width: 25px;
+  height: 18px;
+  display: inline-block;
+  margin-right: 4px;
+  vertical-align: middle;
+}
+.product-left:hover .p-one p i{
+  background: url(../images/sports/cart-2.png) no-repeat;
+}
+
+
+/*子子界面*/
+.subproduct{
+  /*width:35%;*/
+  /*float: left;*/
+  overflow: auto;
+}
+.bigpic{
+   margin-top: 20px;
+  width:260px;
+  height: 260px;
+}
+.bigpic:hover{
+  border: 1px solid #8c2830;
+}
+
+.subimage{margin: 5px 0;}
+.s1,.s3{
+  width: 50px;
+  border: 1px solid rgba(24, 27, 42, 0.13);
+}
+
+.des{
+  /*width:65%;*/
+  /*float:right;*/
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+.subbtn{
+  margin-left: 1045px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.subbtn1{
+  padding-top: 10px;
+}
+
+.jiaxingxing{border-bottom: 1px solid gray;}
+.jiafont{
+  font-family: 'Comfortaa', cursive;
+  font-size:15px;
+}
+.jiafont:hover{
+  font-weight: bold;
+  color:#8c2830;
+}
+.subprice{
+  font-size: 20px;
+font-weight: bold
+}
+.subprice::before{content:"$";}
+
+.color_dis{
+  display: none;
+  position: relative;
+  width: 50px;
+}
+.avi1{color:green;font-size: large;font-weight: bold}
+/*.avi2{color:#8c2830;font-size: large;font-weight: bold}*/
+
+.text{padding: 2px; margin: 0 ;
+    list-style-type: circle;
+}
+.spebtn:hover{background-color:#8c2830 }
+
+.quantity_box {
+  margin: 1.5em 0 0 0;
+}
+.pro_qty{
+  display: inline;
+  width:70px;
+}
+
+.single-right h3{
+  color: #242424;
+  font-size: 1.5em;
+  font-weight: 600;
+  margin: 0 0 18px 0;
+  text-transform: uppercase;
+}
+.product-categories{
+  padding:0;
+  margin-bottom:2.5em;
+}
+
+.product-categories li {
+  padding: 5px 0;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+}
+.product-categories li a {
+  font-size: 14px;
+  color: #202739;
+  font-weight: 500;
+  float:left;
+}
+.product-categories li a:hover {
+  text-decoration: none;
+  color: #8c2830;
+  transition: 0.5s all;
+  -webkit-transition: 0.5s all;
+  -o-transition: 0.5s all;
+  -moz-transition: 0.5s all;
+  -ms-transition: 0.5s all;
+}
+.product-categories li span.count {
+  float: right;
+  color: #202739;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+/*星星界面*/
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color:#8c2830;
+  font-size:14px;
+}
+a:hover {
+  text-decoration: none;
+}
+.clearfix::after{
+  display:block;
+  content:'';
+  height:0;
+  overflow:hidden;
+  clear:both;
+}
+
+.block{
+  width:100%;
+  padding-top:10px;
+}
+.block .star_score{
+  float:left;
+}
+
+.block p,.block .attitude{
+  padding-left:20px;
+  line-height:21px;
+  display:inline-block;
+    color:#999999;
+}
+.block p:hover{
+    color: #8c2830;
+}
+.block p span{
+  color: #8c2830;
+  font-size:16px;
+  font-family:Georgia, "Times New Roman", Times, serif;
+}
+
+.star_score {
+  background:url(../images/sports/stark2.png);
+  width:160px;
+  height:21px;
+  position:relative;
+}
+
+.star_score a{
+  height:21px;
+  display:block;
+  text-indent:-999em;
+  position:absolute;
+  left:0;
+}
+
+.star_score a:hover{
+  background:url(../images/sports/stars2.png);
+  left:0;
+}
+
+.star_score a.clibg{
+  background:url(../images/sports/stars2.png);
+  left:0;
+}
+
+#starttwo .star_score {
+  background:url(../images/sports/starky.png);
+}
+
+#starttwo .star_score a:hover{
+  background:url(../images/sports/starsy.png);
+  left:0;
+}
+
+#starttwo .star_score a.clibg{
+  background:url(../images/sports/starsy.png);
+  left:0;
+}
+
+
+.show_number{
+  padding-left:50px;
+  padding-top:20px;
+}
+
+.show_number li{
+  width:240px;
+  border:1px solid #ccc;
+  padding:10px;
+  margin-right:5px;
+  margin-bottom:20px;
+}
+
+.atar_Show{
+  background:url(../images/sports/stark2.png);
+  width:160px; height:21px;
+  position:relative;
+  float:left;
+}
+
+.atar_Show p{
+  background:url(../images/sports/stars2.png);
+  left:0;
+  height:21px;
+  width:134px;
+}
+
+.show_number li span{
+  display:inline-block;
+  line-height:21px;
+}
+
+/*webview—feedback*/
+.feedback{
+  background-image: url(../images/sports/viewback.png);
+  padding:50px;
+}
+.comtxt{
+    padding-left:150px;
+    font-weight: bold;
+    font-size: large;
+
+}
+.exfeed{padding-top: 50px}
+.extxt{
+    font-weight: bold;
+}
+p span{ color: #8c2830}
+.addline{
+    border-bottom: 1px solid rgba(24, 27, 42, 0.13);
+}
+
+
+
